@@ -1,0 +1,39 @@
+#Вариант 1
+num = int(input("Введите целое число: "))
+if num < 0:
+  result = abs(num)
+elif num == 0:
+  result = 1
+else:
+  result = num
+print(result)
+#Задание 2
+string = input("Введите строку: ")
+
+if "." in string or "," in string:
+    print(True)
+else:
+    print(False)
+#Задание 3
+num1 = int(input("Введите первое число: "))
+num2 = int(input("Введите второе число: "))
+
+div1_by_3 = (num1 % 3 == 0)
+div2_by_3 = (num2 % 3 == 0)
+
+if div1_by_3 and div2_by_3:
+    print(True)
+elif div1_by_3 or div2_by_3:
+    print("Одно число делится на 3")
+else:
+    print(False)
+#Задание 1 Вариант 2
+def print_stars(number):
+  if number < 0:
+    pass
+  elif number > 100:
+    print("*")
+  else:
+    print("*" * number)
+num = int(input("Введите число: "))
+print_stars(num)
