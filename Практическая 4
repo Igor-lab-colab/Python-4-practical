@@ -37,3 +37,44 @@ def print_stars(number):
     print("*" * number)
 num = int(input("Введите число: "))
 print_stars(num)
+#Задание 2
+str1 = input()
+str2 = input()
+if str1 == str2:
+  print("True")
+else:
+  print("False")
+#Задание 3
+def check_color():
+    try:
+        r = int(input("Введите значение R (0-255): "))
+        g = int(input("Введите значение G (0-255): "))
+        b = int(input("Введите значение B (0-255): "))
+
+        if not (0 <= r <= 255 and 0 <= g <= 255 and 0 <= b <= 255):
+            print("Некорректное значение (вне диапазона 0-255)")
+            return
+
+        if r == 0 and g == 0 and b == 0:
+            print("Чёрный цвет")
+        elif r == 255 and g == 255 and b == 255:
+            print("Белый цвет")
+        elif r == 255 and g == 0 and b == 0:
+            print("Красный цвет")
+        elif g == 255 and r == 0 and b == 0:
+            print("Зелёный цвет")
+        elif b == 255 and r == 0 and g == 0:
+            print("Синий цвет")
+        else:
+            print("Нет цвета")
+    except ValueError:
+        print("Некорректный ввод. Пожалуйста, введите целые числа.")
+check_color()
+#Задание 1 Вариант 3
+num = int(input("Введите число: "))
+if num > 0:
+    print(f"Результат: {num - 1}, {num}, {num + 1}")
+else:
+    num = 1
+    print(f"Результат: {num - 1}, {num}, {num + 1}")
+#Задание 2
